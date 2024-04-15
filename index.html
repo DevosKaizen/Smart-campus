@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Smart Campus</title>
+    <link rel="icon" href="https://img.icons8.com/?size=80&id=P3dU0lFGKHgh&format=png">
+    <style>
+        .light-blue-nav {
+            background-color: #45d0ff !important;
+        }
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        img {
+            transition: transform 0.2s; /* Animação */
+        }
+        img:hover {
+            transform: scale(1.5); /* (150% zoom - CSS3 only) */
+        }
+
+
+           /*Adicione um efeito de transição suave ao alterar a propriedade de fonte*/
+           .nav-link {
+            transition: font-size 0.2s;
+        }
+        /*Aumente o tamanho da fonte ao pairar sobre o link*/
+        .nav-link:hover {
+            font-size: 1.5em;
+        }
+        /*Adicione um efeito de transição suave ao alterar a propriedade de transformação*/
+        img {
+            transition: transform 0.2s; /* Animation */
+        }
+        /*Zoom de 150% apenas CSS3*/
+        img:hover {
+            transform: scale(1.5); 
+        }
+
+         /*Adicione um efeito de transição suave ao alterar a propriedade de transformação*/
+         .btn-primary {
+            transition: transform 0.2s; 
+        }
+        /*Zoom de 150% apenas CSS3*/
+        .btn-primary:hover {
+            transform: scale(1.2); 
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light light-blue-nav">
+            <a class="navbar-brand" href="#">
+    <img src="https://img.icons8.com/?size=80&id=49204&format=png" alt="logo" width="40" height="40">
+.  Smart Campus
+</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Relatórios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Check-in</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Notificaçoes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Usuários</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Salas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Meu cadastro</a>
+                    </li>
+                    <!-- Adicione mais itens de menu conforme necessário -->
+                </ul>
+            </div>
+        </nav>
+
+    <!-- Conteúdo da página Home -->
+    <div class="container mt-4">
+        <h1>Bem-vindo ao Smart Campus!</h1>
+        <form action="/login" method="post">
+            <!-- Formulário de login -->
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Digite seu usuário">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+            </div>
+           <button type="button" class="btn btn-primary mt-3" onclick="location.href='home.html'">Entrar</button>
+        </form>
+    </div>
+    <br>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Informações e links do C3 FURG</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
